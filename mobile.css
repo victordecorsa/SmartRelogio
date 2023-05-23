@@ -1,63 +1,100 @@
+
 header h2{
     font-size: 18pt;
     margin-left: 5%;
   }
 
-  header ul{
+.Menu{
     position: absolute;
     display: none;
-    left: 70%;
+    top: 6%;
+    left: 55%;
     list-style: none;
+    background-color:  #000000bd;
+    padding-left: 10%;
+    text-align: center;
+}
+
+header li{
+    margin-bottom: 50%;
+    font-size: 16pt;
+
+}
+input{
+    appearance: none;
+    background-image: url(menu-burger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    position: absolute;
+    left: 80%;
+}
+input:checked ~ .Menu{
+    position: absolute;
+    display: block;
+    top: 6%;
+    left: 55%;
+    list-style: none;
+    background-color:  #000000bd;
+    padding-left: 10%;
+    text-align: center;
+    transition: ease-in 2s;
 }
 
 .imagem{
-    border: 1px solid red;
     height: 300px;
     width: 90%;
    text-align: center;
 }
 .imagem img{
     width: 109%;
-    margin-top: -3%;
+    animation: none;
    
 }
 
 .texto{
-    border: 1px solid orange;
     color: white;
     width: 100%;
-    height: 370px;
+    height: 270px;
     position: absolute;
     top: 53%;
     margin: auto auto;
 }
 #titulo{
-    position: absolute;
+    text-align: center;
+    position: relative;
     top: 12%;
-    font-size:23pt;
+    font-size:22pt;
     color: black;
+    animation: none;
+    margin-bottom: 15%;
   }
 
   #sub-titulo{
-    display: ;
+    text-align: center;
     color: black ;
-    margin-top: 45%;
-    font-size: 16.5pt;
+    margin-top: 10%;
+    font-size: 16pt;
 }
 .botao{
-    display: none;
     position: absolute;
-    top: 63%;
-    margin-left: 5%;
-    margin-top: 2%;
-    width: 40%;
+    top: 89%;
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+}
+#bnt1{
+    padding: 17px
+}
+#bnt2{
+    padding: 17px;
 }
 footer{
-    display:none;
-    position: absolute;
-    bottom: 2%;
-    width: 99.9%;
-    height: 60px;
-    text-align: center;
+    display: none;
     
 }

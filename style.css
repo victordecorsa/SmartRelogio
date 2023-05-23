@@ -44,20 +44,6 @@ header h2{
     }
   }
   
-  @keyframes CimaBaixo {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(50px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  
-
 header ul{
     position: absolute;
     display: inline-flex;
@@ -69,7 +55,7 @@ header ul{
 header a{
     text-decoration: none;
     color: white;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.2s;
 }
 
 header a:hover{
@@ -81,6 +67,9 @@ header li{
     margin: 20px;
 
 }
+input{
+    display: none;
+}
 .imagem{
     width: 40%;
     height: 500px;
@@ -91,7 +80,6 @@ header li{
 .imagem img{
     width: 100%;
     margin-top: 10%;
-    animation: CimaBaixo 6s infinite;
 }
 
 .texto{
@@ -104,7 +92,7 @@ header li{
 }
 
 #titulo{
-    font-size: 44pt;
+    font-size: 42pt;
     animation-name: animacao-sombra;
     animation-duration: 4s;
     animation-timing-function: linear;
@@ -122,12 +110,12 @@ header li{
     position: absolute;
     top: 63%;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 4%;
     width: 40%;
 }
 
 button{
-    transition: ease-in 250ms;
+    transition: ease-in 200ms;
     cursor: pointer;
 }
 
@@ -183,7 +171,7 @@ footer li{
 footer a{
     text-decoration: none;
     color: black;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.2s;
 }
 
 footer a:hover{
